@@ -15,3 +15,7 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+//Route::resource('photo', 'PhotoController'); // resource controllers
+Route::controller('vdl', 'VdlController');
+Route::resource('users', 'UserController');
