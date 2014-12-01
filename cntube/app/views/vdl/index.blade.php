@@ -1,5 +1,9 @@
 @extends('layouts.default')
 
 @section('content')
-    <form action=""></form>
+    {{ Form::open(array('url'=>'/vdl/job')) }}
+        {{ Form::label("URL") }}
+        {{ Form::text("url") }}
+        {{ Form::submit("提交") }}
+    {{ Form::close() }}
 @stop
