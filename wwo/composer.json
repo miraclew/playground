@@ -1,12 +1,16 @@
 {
-	"name": "laravel/laravel",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
+	"name": "gangxu/wwo",
+	"description": "Rest API.",
+	"keywords": ["Api"],
 	"license": "MIT",
 	"type": "project",
 	"require": {
 		"laravel/framework": "4.2.*"
 	},
+    "require-dev": {
+        "phpspec/phpspec": "~2.0.0",
+        "codeception/codeception": "~2.0.0"
+    },
 	"autoload": {
 		"classmap": [
 			"app/commands",
@@ -15,7 +19,10 @@
 			"app/database/migrations",
 			"app/database/seeds",
 			"app/tests/TestCase.php"
-		]
+		],
+        "psr-4": {
+            "": "app"
+        }
 	},
 	"scripts": {
 		"post-install-cmd": [
