@@ -16,7 +16,7 @@ for($i=0; $i<1000; $i++) {
     ];
 
     $pheanstalk
-        ->useTube('testtube')
+        ->useTube('default')
         ->put(json_encode($payload));
 }
 
