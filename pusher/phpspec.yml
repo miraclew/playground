@@ -1,6 +1,0 @@
-suites:
-  acme_suite:
-    namespace: Wo
-    src_path: app
-    spec_path: app
-    spec_prefix: spec
